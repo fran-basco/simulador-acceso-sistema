@@ -1,34 +1,8 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <body>
 
-<script>
-// Pedir los datos al usuario
-let nombre = prompt("Ingrese su nombre:");
-let edad = parseInt(prompt("Ingrese su edad:"));
-let contrasenia = prompt("Ingrese su contraseña (mínimo 6 caracteres):");
-
-
-// Chequear los datos
-if (nombre === "") {
-    alert("Error: El nombre no puede estar vacío");
-} else if (edad < 18) {
-    alert("Acceso denegado: Debe ser mayor de 18 años");
-} else if (contrasenia.length < 6) {
-    alert("Contraseña inválida: Debe tener al menos 6 caracteres");
-} else {
-    // Mostrar mensaje en la consola
-    console.log("¡Bienvenido al sistema!");
-    console.log("Datos del usuario:");
-    console.log("Nombre: " + nombre);
-    console.log("Edad: " + edad);
-    console.log("Contraseña: " + contrasenia);
-
-    // Calcular edad en 10 años y mostrar alerta
-    let edadEn10Anios = edad + 10;
-    alert("¡Hola " + nombre + "! Actualmente tenés " + edad + " años, y en 10 años tendrás " + edadEn10Anios + " años. Tu contraseña es " + contrasenia + ".");
-}
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>
